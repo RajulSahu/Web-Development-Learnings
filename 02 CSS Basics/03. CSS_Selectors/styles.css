@@ -1,0 +1,41 @@
+body {
+  background-color: #f1faee;
+}
+
+h1,
+h2 {
+  color: #1d3557;
+}
+
+#signup {
+  background-color: #1d3557;
+  color: #f1faee;
+}
+
+.tags {
+  background-color: crimson;
+  color: #f1faee;
+  font-size: 15px;
+}
+
+ul li a {
+  color: darkcyan;
+}
+
+h1 + button {
+  font-size: 20px;
+  background-color: magenta;
+}
+
+button:hover {
+  background-color: #e63946;
+  color: #f1faee;
+}
+
+button:active {
+  background-color: #02c39a;
+}
+
+h1::first-letter {
+  font-size: 45px;
+}

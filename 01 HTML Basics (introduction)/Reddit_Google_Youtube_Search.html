@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search on Google and Reddit.</title>
+  </head>
+  <body>
+    <h1>Hijacking Searches.</h1>
+
+    <form action="https://www.reddit.com/search">
+      <p>
+        <label for="reddit"><b>Search Reddit.</b></label>
+        <br />
+        <input id="reddit" type="text" name="q" />
+        <button>Search Reddit</button>
+      </p>
+    </form>
+
+    <form action="https://www.google.com/search">
+      <p>
+        <label for="google"><b>Search google.</b></label>
+        <br />
+        <input id="google" type="text" name="q" />
+        <button>Search Google</button>
+      </p>
+    </form>
+
+    <form action="https://www.youtube.com/results">
+      <p>
+        <label for="yt"><b>Search Youtube.</b></label>
+        <br />
+        <input id="yt" type="text" name="search_query" />
+        <button>Search Youtube</button>
+      </p>
+    </form>
+
+    <hr />
+
+    <h1>Check boxes.</h1>
+    <form action="#">
+      <p>
+        <input id="cb" type="checkbox" name="agree" />
+        <label for="cb">I agree to terms and conditions.</label>
+      </p>
+    </form>
+
+    <hr />
+
+    <form action="#">
+      <h1>Radio Buttons.</h1>
+      <p>
+        <input type="radio" name="size" id="s" value="small" />
+        <label for="s">Small(S)</label>
+
+        <input type="radio" name="size" id="l" value="large" />
+        <label for="l">Large(L)</label>
+
+        <input type="radio" name="size" id="xl" value="ex-large" />
+        <label for="xl">Extra Large(XL)</label>
+      </p>
+    </form>
+
+    <hr />
+
+    <form action="#">
+      <h1>Dropdown</h1>
+      <label for="dish">Select a dish from the dropdown: </label>
+      <select name="dish" id="dish">
+        <option value="Boiled Egg">Boiled Egg</option>
+        <option value="Omelette">Omelette</option>
+        <option value="Roasted Chicken">Roasted Chicken</option>
+        <option value="Paneer Tikka">Paneer Tikka</option>
+        <option value="Roasted Champ">Roasted Champ</option>
+      </select>
+    </form>
+
+    <hr />
+
+    <form action="#">
+      <h1>Range</h1>
+      <p>
+        <label for="cheese">Amount of cheese:</label>
+        <input
+          type="range"
+          name="cheese"
+          id="cheese"
+          value=""
+          min="1"
+          max="10"
+        />
+      </p>
+    </form>
+
+    <hr />
+
+    <form action="#">
+      <h1>Text Area.</h1>
+      <p>
+        <label for="request">Any special requests:</label><br />
+        <textarea id="request" rows="10">Your requests here.</textarea>
+      </p>
+
+      <label for="fullname">Your Full-Name here:</label>
+      <input
+        id="fullname"
+        name="fullname"
+        type="text"
+        required
+        placeholder="Full name"
+      />
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
