@@ -40,3 +40,48 @@ let ans1 = evenOdd(4);
 console.log(ans1);
 let ans2 = evenOdd(5);
 console.log(ans2);
+
+// Function Scope
+// The local_variable will not be accessable outside the function scope.
+function scope() {
+  let local_variable = 9;
+}
+
+// In javascript functions can be stored inside a variable.
+const add = function (x, y) {
+  return x + y;
+};
+add(1, 3);
+
+// Higher order functions.
+function callTwice(func) {
+  func();
+  func();
+}
+
+function greet() {
+  console.log("Hello!");
+}
+
+callTwice(greet);
+
+// Returning a function as a value from within a function.
+
+function makeMystryFunc() {
+  const rand = Math.random();
+  if (rand > 0.5) {
+    return function () {
+      console.log("CONGRATS, I AM A GOOD FUNCTION");
+      console.log("YOU WIN 7 CRORE RUPEES");
+    };
+  } else {
+    return function () {
+      alert("YOU HAVE BEEN INFECTED BY A COMPUTER VIRUS!");
+      alert("DON'T TRY TO CLOSE THIS WINDOW!");
+      alert("DON'T TRY TO CLOSE THIS WINDOW!");
+      alert("DON'T TRY TO CLOSE THIS WINDOW!");
+      alert("DON'T TRY TO CLOSE THIS WINDOW!");
+      alert("DON'T TRY TO CLOSE THIS WINDOW!");
+    };
+  }
+}
